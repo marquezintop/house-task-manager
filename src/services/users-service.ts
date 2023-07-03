@@ -1,6 +1,6 @@
 import { getUser } from "../repositories/users-repository";
 
-export async function NameExists(name: string) {
+export async function userNameExists(name: string) {
     const isName = await getUser(name);
     if (isName) throw {
         type: "nameIsNotUnique",
