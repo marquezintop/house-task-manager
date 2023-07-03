@@ -11,6 +11,6 @@ export type Task = {
     status: boolean
 }
 
-export type UserCreated = Omit<User, "id">
+export type UserCreated = Omit<User, "id">;
 
-export type TaskCreated = Omit<Task, "id">
+export type TaskCreated = Omit<Task, "id">;

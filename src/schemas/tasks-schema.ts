@@ -7,3 +7,7 @@ export const taskSchema = Joi.object<TaskCreated>({
     userId: Joi.number().integer().required(),
     status: Joi.boolean().required()
 })
+
+export const taskIdSchema = Joi.object({
+    id: Joi.number().integer().required()
+})

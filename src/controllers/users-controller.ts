@@ -11,7 +11,6 @@ export async function createUser(req: Request, res: Response) {
 
         res.sendStatus(201);
     } catch(err: any) {
-        console.log(err);
         if (err.type === "nameIsNotUnique") return res.status(409).send(err.message);
         res.status(500).send(err);
     }
